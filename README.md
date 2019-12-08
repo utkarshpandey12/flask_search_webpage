@@ -14,22 +14,22 @@ web app is instantiated using web_app.py script which uses flask
 path to shopclues.py can be found under folder/sh/sh/spiders/shopclues.py
 settings are defined in folder/sh/sh/settings.py which defines the pipelines 
 
-#Steps to execute the scraping from shopclues.com and view the producrt search web page 
+# Steps to execute the scraping from shopclues.com and view the producrt search web page 
 
 on command line
 1 . clone the repo into folder named whatever you like
 2 . cd folder
 3 . Type the command scrapy runspider "exact path to shopclues.py script"
 
-# The web_app.py uses the csv file for to implement product search capability hence a file named shopclues (1).csv is stored in the working directory folder otherwise everytime you run scrapy runspier shopclues.py creates a csv file under tmp folder.
-# For the sake of convenience it is stored as shopclues (1).csv inside the folder. You can always scrape the data and move these files into root folder to run webapp.py only if yoyr working directory is folder as mentioned above inside which you clone the project.
+The web_app.py uses the csv file for to implement product search capability hence a file named shopclues (1).csv is stored in the working directory folder otherwise everytime you run scrapy runspier shopclues.py creates a csv file under tmp folder.
+For the sake of convenience it is stored as shopclues (1).csv inside the folder. You can always scrape the data and move these files into root folder to run webapp.py only if yoyr working directory is folder as mentioned above inside which you clone the project.
 4. py web_app.py and visit the link http://127.0.0.1:5000/ in your browser to see app runnig
 
 Alternatively if your working directory is not folder then you will have to edit web_app.py manuaaly to provide the path to shopclues.csv file in pd.read_csv function.
 
 Visit the page and try to serach some products name in the seearch bar and submit to see matching product and its details.
 
-#Requirements 
+# Requirements 
 1. Flask
 2 Scrapy
 3 Pandas 
